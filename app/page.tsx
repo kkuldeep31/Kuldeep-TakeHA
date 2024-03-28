@@ -6,18 +6,21 @@ import React from 'react';
 const SimpleComponent: React.FC = () => {
   return (
     <div>
-      <h1>Rank your 5 most favorite Support tasks.</h1>
+      <h1>Manager Customer Support Take Home Assessment</h1>
       <p>Answer 1 - Analyze hundreds of support tickets to spot trends the product team can use</p>
       
       {/* Example of adding a new line with an empty <div> */}
-      <div>Manager, Customer Support Take Home Assessment for Kuldeep Kotturesha</div>
-      <div>My response - Support tickets are goldmines for product improvement! By analyzing these tickets, we can identify recurring issues that impact user experience. This helps the product team:</div>
-<div>Fix underlying architecture problems</div>
-<div>Move towards scalable designs</div>
-<div> This proactive approach minimizes user impact and strengthens the product overall. Support tickets also reveal customer pain points, allowing the product team to: </div>
-<div> Focus on product robustness</div>
-<div> Align future roadmaps with customer needs</div>
-<div> By working together, support and product teams can deliver a superior customer experience, boosting satisfaction and loyalty. </div>
+<div>--------------------------------------</div>      
+<div>Kuldeep Kotturesha, Manager, Customer Support Take Home Assessment</div>
+<div>--------------------------------------</div> 
+<div>Rank your 5 most favorite Support tasks.</div>   
+<div>My response - Support tickets are goldmines for product improvement! By analyzing these tickets, we can identify recurring issues that impact user experience. This helps the product team:</div>
+<div>1.Fix underlying architecture problems</div>
+<div>2.Move towards scalable designs</div>
+<div>3.This proactive approach minimizes user impact and strengthens the product overall. Support tickets also reveal customer pain points, allowing the product team to: </div>
+<div>4.Focus on product robustness</div>
+<div>5.Align future roadmaps with customer needs</div>
+<div>6.By working together, support and product teams can deliver a superior customer experience, boosting satisfaction and loyalty. </div>
 <div> ============================================</div>
 <div>Rank your 5 most favorite Support tasks.</div>
 <div> Answer 2 - Work with engineering teams during incidents and provide updates to internal and external stakeholders. </div>
