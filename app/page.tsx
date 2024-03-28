@@ -294,7 +294,7 @@ information about your decision making process after the reply. </div>
 <div> What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, 
 short-term and long-term </div>
 
-<div> Deployment issues could be one of the most common customer problems Vercel customers could be facing. </div>
+<div> Answer - Deployment issues could be one of the most common customer problems Vercel customers could be facing. </div>
 
 <div> Customers might face various deployment issues during the development and lunch process. These could be further classified into as below. </div>
 
@@ -318,9 +318,9 @@ short-term and long-term </div>
 
 <div>Question No 10</div>
 
-<div> Question How could we improve or alter this familiarisation exercise </div>
+<div> Question - How could we improve or alter this familiarisation exercise </div>
 
-<div>I see that this familiarization exercise on Vercel is quite good and spot on. This helped me to know what Vercel products and solutions are all about and how it is helping enterprise application deployment. However, To make the Vercel familiarization even more engaging, consider adding an interactive quiz section. Here is how quizzes could elevate the learning experience</div>
+<div>Answer - I see that this familiarization exercise on Vercel is quite good and spot on. This helped me to know what Vercel products and solutions are all about and how it is helping enterprise application deployment. However, To make the Vercel familiarization even more engaging, consider adding an interactive quiz section. Here is how quizzes could elevate the learning experience</div>
 <div> Quizzes provide a fun way to assess understanding of key concepts covered in the familiarization program. They can include multiple-choice questions, scenario-based challenges, or even matching exercises. The quiz can also cover topics related to Vercels product offerings and its capabilities. </div>
 
 <div>=============================================</div>
