@@ -58,8 +58,8 @@ const SimpleComponent: React.FC = () => {
 
 <div> ========================================</div>
 
-<div>Rank your 5 least favourite Support tasks</div>
-<div> Answer 2 - Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites</div>
+<div>Rank your 5 least favorite Support tasks</div>
+<div> Answer 2 - Respond to queries on Twitter, Reddit, Hacker News, and other 3rd party sites</div>
 <div> My response - While it would be an honor to represent Vercel in public forums and assist Vercel community users, prioritizing other critical deliverables takes precedence. This task will have a lower priority on my to-do list. However, I am committed to supporting the Vercel community during my spare time once Ive completed my primary work 
 responsibilities. </div>
 
@@ -157,11 +157,92 @@ responsibilities. </div>
 
 <div> Firstly, I express gratitude to the customer for reaching out to support and promptly acknowledge the reported issue. Assuring the customer with confidence, I commit to providing all possible assistance to resolve the build issue effectively. </div>
 
-<div> Concurrently, while awaiting the requested details from the customer, I initiate the process of gathering the necessary information. This includes acquiring framework specifics, complete error message logs, platform details, and a screenshot of the error message. I inquire about the development environment, and any recent changes made, and aim to reproduce the issue in our lab environment for further analysis. </div>
+<div> Concurrently, while awaiting the requested details from the customer, I initiate the process of gathering the necessary information. This includes acquiring framework specifics, complete error message logs, platform details, and a screenshot of the error message. I will ask about the development environment, and any recent changes made, and aim to reproduce the issue in our lab environment for further analysis. </div>
 <div> In parallel, I conduct thorough online research by searching for the framework name, build issue keywords, and the exact error message. Exploring official documentation, community forums, and company resources, and utilizing tools like Glean search, I aim to identify relevant solutions or workarounds. Additionally, I leverage internal communication channels such as Slack and seek assistance from subject matter experts. </div>
 <div> Throughout the process, I maintain transparent communication with the customer, updating them on my progress and efforts. Despite the framework being new to me, I actively seek solutions and share relevant findings, including potential workaround steps, for the customers consideration. </div>
 
 <div> ==============================================</div>
+<div> Question No 6</div>
+
+<div> Question - However Customer is not happy about the progress and reverts as below. </div>
+<div>---------------</div>
+<div> Im so frustrated. Ive been trying to make this work for hours and I just cant figure it
+out. It must be a platform issue so just fix it for me instead of asking me questions. </div>
+<div>----------------</div>
+<div> Answer - My response would be as follows. </div>
+
+<div> I completely understand your frustration and the stress that comes with spending hours trying to resolve this issue. Please know that I empathize with your situation, and Im committed to helping you find a solution as quickly as possible. </div>
+<div> Since this framework is new to me, and considering the urgency of resolving this matter promptly, I am taking internal steps to escalate this with the utmost priority to our Backline support team for further assistance. While I coordinate with the Backline support engineer, I kindly ask for your patience and cooperation. I will promptly update you with the details for a collaborative troubleshooting session meeting details once the engineer is briefed and ready to assist. </div>
+<div> Please expect to hear back from me within the next 15 minutes with the necessary information. Thank you for your understanding and cooperation in this matter. </div>
+
+<div> ========================================================</div>
+
+<div> Question No 7</div>
+<div> A customer writes into the Helpdesk asking How do I do a redirect from the /blog
+path to https://example.com Please write a reply to the customer. Feel free to add any
+information about your decision making process after the reply. </div>
+
+<div> Pls note - Assuming that Customer is using Apache or Tomcat. I will be using both as examples. </div>
+
+<div> My response</div>
+<div> Subject: Re: Redirecting /blog path to example.com</div>
+
+<div> Hi CustomerName, </div>
+
+<div> Thanks for reaching out to Vercel support. My name is (My Name) and I will be assisting you with this ticket. </div>
+
+<div> To set up a redirect from /blog path to example.com you can utilize the below methods depending on the web server configuration and setup. </div>
+
+<div> Considering security aspects in mind, we would highly recommend using a server-side redirect. The reason is that it is the most reliable and secure way to implement a redirect. </div>
+
+<div> Please note that the below examples assume a basic server config. In Apache servers, one common and recommended method is to use a web server config file such as (.htaccess) to create the redirect rule. </div>
+
+<div> -------------------------</div>
+<div> RewriteEngine On</div>
+<div> RewriteRule blog example.com (R=302,L) </div>
+<div> --------------------------</div>
+<div> This would need Apache restart so that the configuration is picked up. </div>
+
+<div> If tomcat is the web server </div>
+<div> This method involves editing your tomcat applications context.xml file. Within the (Context) element, you can add a valve element configured for redirection</div>
+
+<div> Take a backup of context.xml (In Linux, cp context.xml /backup/tomcat_context.bck.xml) </div>
+<div>  Open context.xml in any text editor (vi) </div>
+
+<div> ----------------------------</div>
+
+<div> Restart tomcat</div>
+
+<div> Once implemented, thoroughly test your redirects to ensure they work as expected. </div>
+<div> ----------------------------</div>
+<div> Pls note - I would send the context.xml code snippet along with redirect rules for customers familiarity.</div>
+<div> I removed the sample context.xml redirect rule below as it was interfering with this typescript program </div>
+<div> --------------------------</div>
+<div> Syntax Explanation - </div>
+
+<div> pattern=/blog(.*) This matches any request starting with /blog, capturing anything that follows as a group (.*).</div>
+<div> replacement=example.com - This defines the target URL for the redirection. </div>
+<div> redirect=true This specifies a permanent (301) redirect. </div>
+<div> --------------------------</div>
+
+<div> Additional details </div>
+<div> Compared to client-side redirects, the reason we highly recommend using server-side redirects is for the below reasons</div>
+<div>1.It ensures all users are redirected, regardless of their browser or device</div>
+<div>2.Server-side redirects happen before any content is loaded, potentially improving website security.</div>
+<div>3.Server-side redirects are generally faster than client-side redirects</div>
+
+<div>301 vs. 302 Redirect: When implementing a server-side redirect, youll need to choose between a 301 (permanent) or 302 (temporary) redirect. A 301 redirect is the best choice in this case, as it informs search engines that the /blog path has permanently moved. (in context.xml - redirect=true: This specifies a permanent 301 redirect.) </div>
+<div>If you have existing links pointing to specific blog posts under the blog path, you may need to update them to point directly to the new location on your main domain. </div>
+
+<div>Hope that with the above information, you should be able to accomplish the desired result. If in case of any further assistance needed, please do not hesitate to reach out to us and we will be happy to help. </div>
+
+<div>Best regards, </div>
+<div>(My full name) </div>
+<div>(Designation) </div>
+<div>(Company Logo and helpdesk contact details) </div>
+
+<div> =========================================</div>
+
 
 
       {/* Example of adding a new line with a comment */}
