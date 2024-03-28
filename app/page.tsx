@@ -78,7 +78,7 @@ responsibilities. </div>
 <div> ====================================</div>
 
 <div>Rank your 5 least favorite Support tasks</div>
-<div> Answer - Dig through logs to troubleshoot a customers broken project</div>
+<div> Answer 5 - Dig through logs to troubleshoot a customers broken project</div>
 <div> My response - While Im eager to assist customers on normal priority tickets, For urgent and high-priority issues Ill prioritize timely resolutions and avoid potential delays by relying on subject matter experts or support engineers for troubleshooting. Ill study the root cause to enhance my knowledge. </div>
 
 ===============================
@@ -240,8 +240,92 @@ information about your decision making process after the reply. </div>
 <div>(My full name) </div>
 <div>(Designation) </div>
 <div>(Company Logo and helpdesk contact details) </div>
-
 <div> =========================================</div>
+<div> Question No 8 </div>
+
+<div> Question - A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about your decision making process after the reply. </div>
+
+<div> My answer </div>
+<div> Hi CustomerName, </div>
+
+<div> Thanks for reaching out to Vercel support. My name is (My Name) and I will be assisting you with this ticket. </div>
+
+<div> After reviewing your ask, we see that there are a couple of ways to prevent search engines from indexing your website. </div>
+
+<div> Using Robots.txt </div>
+<div> The go-to method is creating a robots.txt file. Placed at the root of your website, this file acts like a guide for search engine crawlers, telling them which pages are off-limits for indexing. A simple example would be a line disallowing all indexing as exampled below. </div>
+<div> -------------------------</div>
+<div> User-agent: *</div>
+<div> Disallow: /</div>
+<div> --------------------------</div>
+<div> For more granular control, consider meta robots tags. Placed within the (head) section of individual website HTML code, these tags offer specific indexing instructions for those pages. In contrast, robots.txt works at a broader website level. </div>
+
+<div> The below example of a meta robots tag instructs search engines not to index the page </div>
+
+<div> -----------------------</div>
+
+<div>  name robots content noindex </div>
+<div> ------------------------</div>
+
+<div> Robots.txt is generally preferred for simplicity when you want to prevent indexing of your entire website. </div>
+<div> Meta robots tags are useful for selectively preventing indexing of specific pages while allowing others to be indexed. </div>
+
+
+<div> We assume that your website is still in the development phase and hence you do not want to get the website indexed. </div>
+
+<div> However the above instructions are not foolproof and do not guarantee that the search engines wont try to crawl your site for indexing purposes. This primarily instructs search engines on how to handle your website. </div>
+
+<div> Once the website is ready for production launch, you may need to consider removing these restrictions so that the search engines index your content</div>
+
+<div> Additionally we would also like to suggest using password-protecting your website if you desire to add an extra layer of security until you are ready for public launch. </div>
+
+<div>Hope the above-provided solutions are sufficient to accomplish your desired outcome. If you have any further questions or need help implementing these solutions, please contact us. Thank you. </div>
+
+<div>Best regards, </div>
+<div>(My full name) </div>
+<div>(Designation) </div>
+<div>(Company Logo and helpdesk contact details) </div>
+
+
+<div>======================================================</div>
+
+<div> Question No 9 </div>
+
+<div> What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, 
+short-term and long-term </div>
+
+<div> Deployment issues could be one of the most common customer problems Vercel customers could be facing. </div>
+
+<div> Customers might face various deployment issues during the development and lunch process. These could be further classified into as below. </div>
+
+<div> 1.Build errors during deployment. </div>
+<div> 2.Configuration issues with environment variables or serverless functions</div>
+<div> 3.Domain name or SSL certificate problems</div>
+<div> 4. Slower deployment issues</div>
+
+<div>Short-Term Solutions: </div>
+<div>1.Uncovering Issues Quickly Needs Real-Time Debugging: The Vercels platform should be equipped with real-time logging and debugging tools. This allows developers to self pinpoint issues as they occur during deployment, minimizing troubleshooting time. </div>
+<div>2.Proactive Pre-Deployment Checks: The Vercel build platform can incorporate pre-requisite checks and audits. These proactive measures ensure all deployment dependencies are met before deployment begins, helping to prevent potential issues and downtime. </div>
+<div>3.Self-Service Rollback Functionality: Empower customers with a rollback feature. This allows them to revert to a previous deployment state if something goes wrong, minimizing downtime and frustration. </div>
+<div>4.Knowledge Base and Support Bot: Develop a comprehensive knowledge base that captures common deployment issues and their resolutions. Ensure the knowledge base is well-maintained and covers a wide range of deployment scenarios. Additionally, consider a self-service support bot powered by a well-trained LLM (Large Language Model) to offer customers immediate and relevant assistance. </div>
+<div>-----------------------------</div>
+<div>Long Term Solutions:  Building Resilience and Community</div>
+<div>1.Problem Management Approach: Elevate common deployment issues to a problem management level. This involves collaborating with all internal stakeholders to identify and implement permanent solutions, not just temporary fixes. </div>
+<div>2.Root Cause Analysis: For each deployment issue, conduct a thorough root cause analysis. Look for common trends and share these insights with the engineering team. Track issues until permanent resolutions are in place. Brainstorming sessions with engineering and other stakeholders can also be valuable in uncovering root causes and determining if architectural changes are necessary. </div>
+<div>3.Comprehensive Documentation and Community Engagement: Invest in creating user-friendly documentation encompassing common deployment scenarios, framework configuration details, and troubleshooting guides.</div>
+<div>4.An active support team presence in community forums can further assist customers by highlighting resolution steps for common issues, promoting faster self-service, and reducing downtime. </div>
+<div>=============================================</div>
+
+<div>Question No 10</div>
+
+<div> Question How could we improve or alter this familiarisation exercise </div>
+
+<div>I see that this familiarization exercise on Vercel is quite good and spot on. This helped me to know what Vercel products and solutions are all about and how it is helping enterprise application deployment. However, To make the Vercel familiarization even more engaging, consider adding an interactive quiz section. Here is how quizzes could elevate the learning experience</div>
+<div> Quizzes provide a fun way to assess understanding of key concepts covered in the familiarization program. They can include multiple-choice questions, scenario-based challenges, or even matching exercises. The quiz can also cover topics related to Vercels product offerings and its capabilities. </div>
+
+<div>=============================================</div>
+<div>Thanks for the familiarization assessment. This was very insightful. </div>
+
 
 
 
