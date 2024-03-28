@@ -107,6 +107,63 @@ responsibilities. </div>
 <div>8.Identifying and addressing any gaps in existing documentation to ensure clarity, completeness, and accessibility for both customers and support staff. </div>
 <div> ========================================</div>
 
+<div>Question no 3</div>
+<div>My Answer</div>
+
+<div> Describe how you solved a challenge or technical issue that you faced in a previous role (preferably in a previous support role). How did you determine that your solution was successful? </div>
+
+<div> I encountered a significant challenge that encompassed both technical and operational aspects. A highly escalated customer reported a critical issue with a data pipeline, impacting various downstream applications crucial for business insights, including ETL processes, databases, and visualization tools like PowerBI and Tableau. </div>
+<div> The data pipeline handled processed data, with its processing logic in Spark on the Databricks platform. However, a prerequisite program on another server, managed by third-party software, complicates matters. </div>
+<div> Operationally, the customer inadvertently raised duplicate cases, resulting in negative feedback from their leadership despite our clarification that the issue lay with the third-party vendor. In response, I, as the duty manager, engaged with the customer directly, despite the unavailability of the assigned engineer due to personal reasons. </div>
+<div> While being on a Customer call, In parallel, I coordinated with another engineer to ensure a comprehensive understanding of the situation. Leveraging the customers operational access to their server, we swiftly identified a Linux file permission issue in a directory, directly related to the third-party software. Despite not being responsible for that third party server instance maintenance, we provided technical recommendations, including chmod and chown commands in Linux. </div>
+<div> The customer was the server/instance owner and had permission from their leadership to carry out our recommendations (by following their emergency change process). </div>
+<div> Implementing our suggestions promptly resolved the issue, earning positive feedback from the customer and reversing the negative CSAT rating. This successful resolution underscored our commitment to customer satisfaction and willingness to collaborate, ultimately restoring trust and confidence in our support services. </div>
+
+<div> During our call, the Customer ascertained and confirmed that their BI applications are getting the new updated data. </div> 
+
+<div> ==============================================</div>
+<div> Question no 4</div>
+ 
+<div> When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel? </div>
+
+<div> My Answer</div>
+<div> I would consider using the below functions based on the use cases: </div>
+
+<div> Edge functions -  If the web app is designated with a task requiring low latency and needs to process data closer to the end users location, then using Edge functions will help. If low latency and geographically distributed processing are critical, prioritize edge functions. Also, consider for real-time interactions or immediate responses, consider edge functions</div>
+
+<div> Some of the use cases </div>
+<div>1.High-quality and quantity images or content that needs optimization for faster delivery. </div>
+<div>2.Personalization based on user data (Content personalization) </div>
+<div>3.Authentication or Authorization checks</div>
+<div>4.Headers modification or cookies based on user location. </div>
+<div> ------------------------------------------</div>
+
+<div> Serverless Functions: Serverless functions are suited for the below use cases that do not require real-time processing or direct user interactions. Even asynchronuous workload works well with serverless functions. </div>
+
+<div> 1.Ideal for use cases that involve the execution of backend logic, like analytic intensive workload, Dynamic data processing, High volume of Data Manipulations, compute intensive workloads, Apps requiring connections with API endpoints, Form submissions </div>
+<div> ------------------------------------------</div>
+<div> Edge Middleware: 1. When the application needs to manipulate requests or response customization before reaching serverless functions, then edge middleware would be the better choice. </div>
+<div> 2.Frequently accessed data caching to get faster response time. </div>
+<div> 3.Specific pattern-based URL rewrite or routing to a particular application or web page. </div>
+<div> 4.Rate throttling/Limiting or adding security headers</div>
+
+<div>=======================================================</div>
+
+<div> Question No 5</div>
+
+<div> Question - Imagine a customer writes in requesting help with a build issue on a framework or technology that youve not seen before. How would you begin troubleshooting this and what questions would you ask the customer to understand the situation better? </div>
+
+<div> My approach would be as follows. </div>
+
+<div> Firstly, I express gratitude to the customer for reaching out to support and promptly acknowledge the reported issue. Assuring the customer with confidence, I commit to providing all possible assistance to resolve the build issue effectively. </div>
+
+<div> Concurrently, while awaiting the requested details from the customer, I initiate the process of gathering the necessary information. This includes acquiring framework specifics, complete error message logs, platform details, and a screenshot of the error message. I inquire about the development environment, and any recent changes made, and aim to reproduce the issue in our lab environment for further analysis. </div>
+<div> In parallel, I conduct thorough online research by searching for the framework name, build issue keywords, and the exact error message. Exploring official documentation, community forums, and company resources, and utilizing tools like Glean search, I aim to identify relevant solutions or workarounds. Additionally, I leverage internal communication channels such as Slack and seek assistance from subject matter experts. </div>
+<div> Throughout the process, I maintain transparent communication with the customer, updating them on my progress and efforts. Despite the framework being new to me, I actively seek solutions and share relevant findings, including potential workaround steps, for the customers consideration. </div>
+
+<div> ==============================================</div>
+
+
       {/* Example of adding a new line with a comment */}
       {/* This is a new line */}
       
