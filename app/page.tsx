@@ -6,14 +6,11 @@ import React from 'react';
 const SimpleComponent: React.FC = () => {
   return (
     <div>
-      <h1>Manager Customer Support Take Home Assessment</h1>
-      <p>Answer 1 - Analyze hundreds of support tickets to spot trends the product team can use</p>
+      <h1>Kuldeep Kotturesha, Manager Customer Support Take Home Assessment</h1>
+      <p>Question 1 Rank your 5 most favorite Support tasks </p>
       
       {/* Example of adding a new line with an empty <div> */}
-<div>--------------------------------------</div>      
-<div>Kuldeep Kotturesha, Manager, Customer Support Take Home Assessment</div>
-<div>--------------------------------------</div> 
-<div>Rank your 5 most favorite Support tasks.</div>   
+<div>--------------------------------------</div>   
 <div>My response - Support tickets are goldmines for product improvement! By analyzing these tickets, we can identify recurring issues that impact user experience. This helps the product team:</div>
 <div>1.Fix underlying architecture problems</div>
 <div>2.Move towards scalable designs</div>
